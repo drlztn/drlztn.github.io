@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'fivo_sans_modernbold';
+    src: url('fivosansmodern-bold-webfont.woff2') format('woff2'),
+         url('fivosansmodern-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notcouriersansregular';
+    src: url('NotCourierSans-webfont.eot');
+    src: url('NotCourierSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NotCourierSans-webfont.woff') format('woff'),
+         url('NotCourierSans-webfont.ttf') format('truetype'),
+         url('NotCourierSans-webfont.svg#notcouriersansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notcouriersansbold';
+    src: url('NotCourierSans-Bold-webfont.eot');
+    src: url('NotCourierSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NotCourierSans-Bold-webfont.woff') format('woff'),
+         url('NotCourierSans-Bold-webfont.ttf') format('truetype'),
+         url('NotCourierSans-Bold-webfont.svg#notcouriersansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+	font-family: 'fivo_sans_modernbold';
+	font-weight: normal;
+  font-style: normal;
+  font-size: 40pt;
+}
+
+h2 {
+  font-family: 'fivo_sans_modernbold';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30pt;
+  line-height: 1em;
+}
+
+h3 {
+  font-family: 'fivo_sans_modernbold';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20pt;
+  line-height: 1em;
+}
+
+p {
+	font-family: 'notcouriersansregular';
+	letter-spacing: -1px;
+}
+
+a {
+  letter-spacing: -1px;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+#logo {
+	display: block;
+	height: 100px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titulos_proyectos {
+	text-align: center;
+  margin-bottom: -20px; 
+}
+
+#negrilla {
+  font-family: 'notcouriersansbold';
+}
+
+.about_div {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#footer {
+  font-family: 'notcouriersansregular';
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+}
+
+.div_centro {
+  width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);  
+}

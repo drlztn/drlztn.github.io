@@ -1,0 +1,151 @@
+/* CUERPO */
+body {
+  margin: 0;
+}
+
+/* GENERAL */
+
+.container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin: 10px 0 5px 0;  
+}
+
+.header_fixed {
+  position: fixed;
+  top: 18px;
+  z-index: 1;
+}
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+
+/* HOME Y ABOUT*/
+
+.titulos_proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.about_div {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* PROYECTOS */
+
+.proyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+.header_proyecto {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 100%;
+  min-width: 100%;
+  margin-bottom: 5%;
+}
+
+.descripcion_proyecto {
+  margin: 0 auto;
+  width: 41%;
+  text-align: center;
+  position: relative;
+  top: 25%
+}
+
+/* FUENTES */
+
+@font-face {
+    font-family: 'fivo_sans_modernbold';
+    src: url('fivosansmodern-bold-webfont.woff2') format('woff2'),
+         url('fivosansmodern-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notcouriersansregular';
+    src: url('NotCourierSans-webfont.eot');
+    src: url('NotCourierSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NotCourierSans-webfont.woff') format('woff'),
+         url('NotCourierSans-webfont.ttf') format('truetype'),
+         url('NotCourierSans-webfont.svg#notcouriersansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notcouriersansbold';
+    src: url('NotCourierSans-Bold-webfont.eot');
+    src: url('NotCourierSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NotCourierSans-Bold-webfont.woff') format('woff'),
+         url('NotCourierSans-Bold-webfont.ttf') format('truetype'),
+         url('NotCourierSans-Bold-webfont.svg#notcouriersansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  font-family: 'fivo_sans_modernbold';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40pt;
+}
+
+p {
+  font-family: 'notcouriersansregular';
+  letter-spacing: -1px;
+  font-size: 12pt;
+}
+
+a {
+  letter-spacing: -1px;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.negrilla {
+  font-family: 'notcouriersansbold';
+}
+
+.quote {
+  font-size: 20pt;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.titulo_proyecto {
+  font-size: 50pt;
+  color: white;
+  margin-bottom: 0;
+}
+
+.subtitulo_proyecto {
+  font-family: 'notcouriersansbold';
+  color: white;
+  font-size: 15pt;
+}

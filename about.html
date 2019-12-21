@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> DRLZTN </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<script src="scripts/jQuery/jquery-3.4.1.min.js"></script>
+		<script src="scripts/jQuery/jquery.nicescroll-3.7.6/dist/jquery.nicescroll.min.js"></script>
+		<script defer src="scripts/node_modules/swup/dist/swup.min.js"></script>
+		<script defer src="scripts/node_modules/@swup/slide-theme/dist/SwupSlideTheme.min.js"></script>
+		<script defer src="scripts/node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.min.js"></script>
+		<script defer src="scripts/node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.js"></script>
+		<script defer src="scripts/main.js"></script>
+	</head>
+	<body>
+		<article class="container">
+			<div id="menu" class="menu">
+			</div>
+			<div id="swup" class="about">
+				<p style="font-size: 15pt">
+					Soy diseñador con énfasis en medios interactivos, gráfica y producción audiovisual. Mi trabajo busca relacionar la música, la imagen y la realidad electrónica en que vivimos con el ánimo de enriquecer y potenciar procesos de producción cultural.
+					<br> <br>
+					Bogotá, Colombia. 
+				</p>
+			</div>
+		</article>
+		<script type="text/javascript" data-swup-ignore-script>
+    		function myFunction(x) {
+  				if (menu_celu.matches) { // If media query matches
+    				document.getElementById("menu").innerHTML =
+    				'<a href="/index.html">'+
+    				'<img src="resources/images/logo_200.png" style="height: 120px; ">'+
+					'</a>'+
+					'<p style="font-size: 9pt">'+
+						'<a href="/about.html">PIERRE PUENTES </a>'+
+						'AKA '+
+						'<a href="/derealization.html"> DRLZTN</a>'+
+					'</p>'+
+					'<p style="font-size: 9pt">'+
+						'<a href="/works.html">OTROS PROYECTOS</a>'+
+						'					   '+
+						'<a href="https://derealizationnn.tumblr.com/">BLOG</a>'+
+						'					   '+
+						'<a href="/contact.html">CONTACTO</a>'+
+					'</p>';
+  				}	else {
+    				document.getElementById("menu").innerHTML = 
+    				'<a href="/index.html">'+
+    				'<img src="resources/images/logo_200.png" style="height: 120px; ">'+
+    				'</a>'+
+    				'<p style="font-size: 9pt">'+
+    					'<a href="/about.html">PIERRE PUENTES</a>'+
+    					'<br>AKA'+
+    					'<a href="/derealization.html"> DRLZTN</a>'+
+    				'</p>'+
+    				'<p style="font-size: 9pt">'+
+    					'<a href="/works.html">OTROS PROYECTOS</a>'+
+    					'<br>'+
+    					'<a href="https://derealizationnn.tumblr.com/">BLOG</a>'+
+    					'<br>'+
+    					'<a href="/contact.html">CONTACTO</a>'+
+    				'</p>';
+  					}
+				}
+				var menu_celu = window.matchMedia("(max-width: 480px)")
+				myFunction(menu_celu)
+				menu_celu.addListener(myFunction)
+		</script>
+		<script src="scripts/scan.js" type="text/javascript"></script>
+	</body>
+</html>

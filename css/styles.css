@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* CUERPO */
 
 body {
@@ -256,3 +257,263 @@ a:hover {
   text-decoration: underline;
 }
 
+=======
+/* CUERPO */
+
+body {
+  margin: 0;
+}
+
+/* GENERAL */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 53%;
+  margin: 0 auto;
+}
+
+.menu {
+  position: fixed;
+  top: 35%;
+}
+
+.proyectos_principal {
+  margin: 10.5% 0 0 180px;
+  line-height: 1.1;
+  font-size: 2.29em;
+}
+
+.about {
+  text-transform: uppercase;
+  margin: 30.5% 0 0 180px;
+  line-height: 1.5;
+}
+
+.proyecto {
+    margin: 27.5% 0 5% 180px;
+}
+
+.completo {
+  width: 100%;
+  margin: 0 0 5% 0;
+}
+
+.mitad {
+  width: 50%;
+  margin: 0 0 5% 0;
+}
+
+.tercio {
+  width: 33%;
+  margin: 0 0 5% 0;
+}
+
+.lista_proyectos {
+    column-width: 15em;
+    column-gap: 2em;
+    text-align: left;
+    white-space: nowrap;
+    margin: 33.5% 0 5% 180px;
+    font-family: 'fivo_sans_modernregular';
+    font-size: 11pt;
+    width: 100%;
+    line-height: 18px;
+}
+
+.line {
+  display: block;
+}
+
+.left {
+  display: inline-block;
+  text-align: left;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.right{
+  display: inline-block;
+  text-align: right;
+  white-space: nowrap;
+  width: 40%;
+}
+
+.overlays {
+  z-index: -1;
+  position: absolute;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+  /* For tablets: */
+  .container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .menu {
+    width: 100%;  
+    top: 5%;
+    left: 5%;
+  }
+
+  .proyectos_principal {
+    margin: 0 0 10% 28%;
+    line-height: 1.4;
+    font-size: 1.8em;
+  }
+
+  .about {
+    margin: 2% 30px 5% 30%;
+  }
+
+  .proyecto {
+    margin: 2% 30px 15% 30%;
+  }
+
+  .mitad {
+    width: 100%;
+  }
+
+  .tercio {
+    width: 100%;
+  }
+
+  .lista_proyectos {
+    margin: 2% 30px 5% 30%;
+    width: 83%;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu {
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    text-align: center;
+  }
+
+  .proyectos_principal {
+    margin: 55% 0 10% 0;
+    line-height: 1.4;
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .about {
+    margin: 55% 30px 5% 30px;
+  }
+
+  .proyecto {
+    margin: 55% 30px 15% 30px;
+  }
+
+  .mitad {
+    width: 100%;
+  }
+
+  .tercio {
+    width: 100%;
+  }
+
+  .lista_proyectos {
+    margin: 65% 30px 5% 30px;
+    width: 83%;
+    line-height: 25px;
+  }
+}
+
+/* FUENTES */
+
+@font-face {
+    font-family: 'fivo_sans_modernbold';
+    src: url('fivosansmodern-bold-webfont.woff2') format('woff2'),
+         url('fivosansmodern-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fivo_sans_modernregular';
+    src: url('fivosansmodern-regular-webfont.woff2') format('woff2'),
+         url('fivosansmodern-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notcouriersansregular';
+    src: url('NotCourierSans-webfont.eot');
+    src: url('NotCourierSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NotCourierSans-webfont.woff') format('woff'),
+         url('NotCourierSans-webfont.ttf') format('truetype'),
+         url('NotCourierSans-webfont.svg#notcouriersansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notcouriersansbold';
+    src: url('NotCourierSans-Bold-webfont.eot');
+    src: url('NotCourierSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NotCourierSans-Bold-webfont.woff') format('woff'),
+         url('NotCourierSans-Bold-webfont.ttf') format('truetype'),
+         url('NotCourierSans-Bold-webfont.svg#notcouriersansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  font-family: 'fivo_sans_modernbold';
+  font-weight: normal;
+  font-style: normal;;
+}
+
+.proyecto h1 {
+  font-size: calc(2em + 1vw);
+}
+
+h2 {
+  font-family: 'fivo_sans_modernbold';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15pt;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-family: 'fivo_sans_modernregular';
+  letter-spacing: 0.05em;
+  font-size: 12pt;
+}
+
+a {
+  transition: color .2s linear;
+  color: #555555;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.proyectos_principal a {
+  color: black;
+  text-decoration: none;
+}
+
+.proyectos_principal a:hover {
+  text-decoration: underline;
+}
+
+>>>>>>> 9e5191a1ffecf80a72d8fbd51056cbb073f5315d

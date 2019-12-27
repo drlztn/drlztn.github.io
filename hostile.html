@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> HOSTILE EP </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<script src="scripts/jQuery/jquery-3.4.1.min.js"></script>
+		<script defer src="scripts/node_modules/swup/dist/swup.min.js"></script>
+		<script defer src="scripts/node_modules/@swup/slide-theme/dist/SwupSlideTheme.min.js"></script>
+		<script defer src="scripts/node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.min.js"></script>
+		<script defer src="scripts/node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.js"></script>
+		<script defer src="scripts/main.js"></script>
+	</head>
+	<body>
+		<article class="container">
+			<div id="menu" class="menu">
+			</div>
+			<div id="swup" class="proyecto">
+				<h1>HOSTILE EP</h1>
+				<p>
+					It is hard to take your <em>ears</em> of the fire that burns deep under our feet. 
+					<br>
+					<p>
+						Gráfica y contenido promocional para el <em>HOSTILE EP</em> de <a href="https://soundcloud.com/kajah">KAJAH</a> lanzado en <a href="https://soundcloud.com/minoritydnb">MINORITY DNB RECORDINGS</a>. Realizado con Blender.
+					</p>
+				</p>
+				<br>
+				<div style="display: flex; flex-flow: row wrap; width: 100%; margin: 0 0 5% 0">
+					<div class="completo">
+						<img src="projects/hostile/hostile.png" style="width: 100%; margin-bottom: 5%;">
+					</div>
+					<div class="completo">
+						<video width="100%" controls loop="true" style="margin: 0 0 5% 0">
+							<source src="projects/hostile/hostile_nuevo_lq.mp4" type="video/mp4" data-swup-preload>
+						</video>
+					</div>
+					<div class="completo">
+						<iframe width="98%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/853237160&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript" data-swup-ignore-script>
+    		function myFunction(x) {
+  				if (menu_celu.matches) { // If media query matches
+    				document.getElementById("menu").innerHTML =
+    				'<a href="/index.html">'+
+    				'<img src="resources/images/logo_200.png" style="height: 120px; ">'+
+					'</a>'+
+					'<p style="font-size: 9pt">'+
+						'<a href="/about.html">PIERRE PUENTES </a>'+
+						'AKA '+
+						'<a href="/derealization.html"> DRLZTN</a>'+
+					'</p>'+
+					'<p style="font-size: 9pt">'+
+						'<a href="/works.html">OTROS PROYECTOS</a>'+
+						'					   '+
+						'<a href="https://derealizationnn.tumblr.com/">BLOG</a>'+
+						'					   '+
+						'<a href="/contact.html">CONTACTO</a>'+
+					'</p>';
+  				}	else {
+    				document.getElementById("menu").innerHTML = 
+    				'<a href="/index.html">'+
+    				'<img src="resources/images/logo_200.png" style="height: 120px; ">'+
+    				'</a>'+
+    				'<p style="font-size: 9pt">'+
+    					'<a href="/about.html">PIERRE PUENTES</a>'+
+    					'<br>AKA'+
+    					'<a href="/derealization.html"> DRLZTN</a>'+
+    				'</p>'+
+    				'<p style="font-size: 9pt">'+
+    					'<a href="/works.html">OTROS PROYECTOS</a>'+
+    					'<br>'+
+    					'<a href="https://derealizationnn.tumblr.com/">BLOG</a>'+
+    					'<br>'+
+    					'<a href="/contact.html">CONTACTO</a>'+
+    				'</p>';
+  					}
+				}
+				var menu_celu = window.matchMedia("(max-width: 480px)")
+				myFunction(menu_celu)
+				menu_celu.addListener(myFunction)
+		</script>
+		<script src="scripts/scan.js" type="text/javascript"></script>
+	</body>
+</html>

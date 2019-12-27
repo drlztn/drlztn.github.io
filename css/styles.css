@@ -190,28 +190,6 @@ body {
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'notcouriersansregular';
-    src: url('NotCourierSans-webfont.eot');
-    src: url('NotCourierSans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('NotCourierSans-webfont.woff') format('woff'),
-         url('NotCourierSans-webfont.ttf') format('truetype'),
-         url('NotCourierSans-webfont.svg#notcouriersansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'notcouriersansbold';
-    src: url('NotCourierSans-Bold-webfont.eot');
-    src: url('NotCourierSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('NotCourierSans-Bold-webfont.woff') format('woff'),
-         url('NotCourierSans-Bold-webfont.ttf') format('truetype'),
-         url('NotCourierSans-Bold-webfont.svg#notcouriersansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 h1 {
   font-family: 'fivo_sans_modernbold';
   font-weight: normal;

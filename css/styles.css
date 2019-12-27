@@ -2,6 +2,9 @@
 
 body {
   margin: 0;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
 }
 
 /* GENERAL */
@@ -9,7 +12,7 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  width: 53%;
+  width: 55%;
   margin: 0 auto;
 }
 

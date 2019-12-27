@@ -1,15 +1,3 @@
-function init() { 
-    if (document.querySelector('body')) {
-		  $("body").niceScroll({
-  			cursorcolor:"black",
-  			cursorwidth:"7px",
-  			cursorborderradius: 0,
-  			cursorborder:'none'
-		});
-    $("body").getNiceScroll().resize();
-	}
-}
-
 function borrar_scan(){
   $("#scan").remove();
 }
@@ -37,8 +25,6 @@ swup.on('willReplaceContent', function(){
 });
 
 swup.on('transitionEnd', function(){
-	init();
   borrar_scan();
 });
 
-init();

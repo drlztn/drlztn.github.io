@@ -217,22 +217,33 @@ p {
   font-size: 12pt;
 }
 
-a {
+a.link_normal:link {
   transition: color .2s linear;
   color: #555555;
   text-decoration: none;
 }
 
-a:hover {
+a.link_normal:hover {
   color: black;
   text-decoration: underline;
 }
 
-.proyectos_principal a {
+a.works:link{
+  transition: color .2s linear;
+  color: grey;
+  text-decoration: none;
+}
+
+a.works:hover{
+  color:black;
+  text-decoration: none;
+}
+
+a.trigger:link {
   color: black;
   text-decoration: none;
 }
 
-.proyectos_principal a:hover {
+a.trigger:hover {
   text-decoration: underline;
 }

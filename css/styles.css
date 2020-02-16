@@ -273,3 +273,9 @@ a.trigger:visited {
 a.trigger:hover {
   text-decoration: underline;
 }
+
+figcaption{
+  font-family: 'fivo_sans_modernregular';
+  letter-spacing: 0.05em;
+  font-size: 9pt
+}

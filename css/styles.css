@@ -49,17 +49,12 @@ body {
 
 .tercio {
   width: 33%;
-  margin: 0;
-}
-
-.tercio_sinMargen {
-  width: 33%;
-  margin: 0;
+  margin: 0 0 5% 0;
 }
 
 .cuarto {
   width: 25%;
-  margin: 0 0 2% 0;
+  margin: 0 0 5% 0;
 }
 
 .lista_proyectos {
@@ -134,10 +129,6 @@ body {
     width: 100%;
   }
 
-  .tercio_sinMargen {
-    width: 100%;
-  }
-
   .cuarto {
     width: 100%;
   }
@@ -183,10 +174,6 @@ body {
   }
 
   .tercio {
-    width: 100%;
-  }
-
-  .tercio_sinMargen {
     width: 100%;
   }
 
@@ -249,20 +236,28 @@ a.link_normal:link {
   text-decoration: none;
 }
 
+a.link_normal:visited {
+  color: #555555;
+  text-decoration: none;
+}
+
 a.link_normal:hover {
   color: black;
   text-decoration: underline;
 }
 
-a.works:link{
+a.works:link {
   transition: color .2s linear;
   color: grey;
   text-decoration: none;
 }
 
-a.works:hover{
+a.works:visited {
+  color: grey;
+}
+
+a.works:hover {
   color:black;
-  text-decoration: none;
 }
 
 a.trigger:link {
@@ -270,12 +265,11 @@ a.trigger:link {
   text-decoration: none;
 }
 
-a.trigger:hover {
-  text-decoration: underline;
+a.trigger:visited {
+  color: black;
+  text-decoration: none;
 }
 
-figcaption{
-  font-family: 'fivo_sans_modernregular';
-  letter-spacing: 0.05em;
-  font-size: 9pt
+a.trigger:hover {
+  text-decoration: underline;
 }

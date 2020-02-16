@@ -52,6 +52,11 @@ body {
   margin: 0 0 5% 0;
 }
 
+.cuarto {
+  width: 25%;
+  margin: 0 0 5% 0;
+}
+
 .lista_proyectos {
     column-width: 15em;
     column-gap: 2em;
@@ -124,6 +129,10 @@ body {
     width: 100%;
   }
 
+  .cuarto {
+    width: 100%;
+  }
+
   .lista_proyectos {
     margin: 2% 30px 5% 30%;
     width: 83%;
@@ -165,6 +174,10 @@ body {
   }
 
   .tercio {
+    width: 100%;
+  }
+
+  .cuarto {
     width: 100%;
   }
 

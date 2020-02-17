@@ -152,7 +152,6 @@ body {
     top: 20px;
     left: 0%;
     text-align: center;
-    margin-bottom: 5%;
   }
 
   .proyectos_principal {
@@ -186,6 +185,16 @@ body {
     margin: 65% 30px 5% 30px;
     width: 83%;
     line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .menu {
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    text-align: center;
+    margin-bottom: 10%;
   }
 }
 

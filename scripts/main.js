@@ -7,7 +7,7 @@ function init(){
   if (selection) {
     agregarCollages();
     function agregarCollages () { 
-      for (var i = 1; i < 89; i++) {  
+      for (var i = 1; i <= 88; i++) {  
         var currentDiv = document.getElementById("divCollages");
         var newDiv = document.createElement('div');
         var img = document.createElement("img");

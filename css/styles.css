@@ -7,6 +7,10 @@ body {
   -ms-overflow-style: none;  /* IE 10+ */
 }
 
+figure{
+  margin: 0;
+}
+
 /* GENERAL */
 
 .container {

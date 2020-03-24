@@ -12,7 +12,7 @@ if (selection) {
 
             newDiv.href = "projects/jamesusill/" + i + ".png";
             newDiv.id = i;
-            newDiv.className = "tercio";
+            newDiv.className = "cuarto";
             newDiv.setAttribute("data-fancybox", "gallery");
             newDiv.appendChild(img);
 

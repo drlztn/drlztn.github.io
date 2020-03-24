@@ -8,7 +8,7 @@ if (selection) {
             var img = document.createElement("img");
 
             img.src = "projects/jamesusill/" + i + ".png";
-            img.setAttribute('width', '100%');
+            img.setAttribute('width', '98%');
 
             newDiv.href = "projects/jamesusill/" + i + ".png";
             newDiv.id = i;

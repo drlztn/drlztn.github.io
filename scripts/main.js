@@ -46,6 +46,7 @@ swup.on('transitionEnd', function(){
 
 swup.on('contentReplaced', function(){
 	collages(); //Sólo en un malviaje en tabogo
+	jamesusill();
 	lightbox();
 });
 
@@ -75,7 +76,7 @@ function collages(){
 	}
 }
 
-//Agregar collages
+//Agregar obras JU
 function jamesusill(){
 	var selection = document.querySelector('#divObras') !== null;
 	if (selection) {
@@ -91,7 +92,7 @@ function jamesusill(){
 
         		newDiv.href = "projects/jamesusill/" + i + ".png";
         		newDiv.id = i;
-        		newDiv.className = "tercio";
+        		newDiv.className = "cuarto";
         		newDiv.setAttribute("data-fancybox", "gallery");
         		newDiv.appendChild(img);
 

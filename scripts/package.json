@@ -1,0 +1,18 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "drlztn webpage packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pierre Puentes aka DRLZTN",
+  "license": "ISC",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@swup/scripts-plugin": "^1.1.0",
+    "@swup/scroll-plugin": "^1.0.6",
+    "@swup/slide-theme": "^1.0.5",
+    "swup": "^2.0.9"
+  }
+}

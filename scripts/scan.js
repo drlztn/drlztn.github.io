@@ -32,7 +32,7 @@ function spawnImage(x, y) {
 	lastY = y;
 
 	var image = document.createElement('img');
-	image.setAttribute('src', '../scripts/scan/' + titulo + '.png');
+	image.setAttribute('src', '../resources/scan/' + titulo + '.png');
 	image.setAttribute('class', 'overlays');
 	image.setAttribute('width', 500);
 	image.setAttribute('height', 500);

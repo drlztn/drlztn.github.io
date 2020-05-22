@@ -45,7 +45,7 @@ swup.on('transitionEnd', function(){
 });
 
 swup.on('contentReplaced', function(){
-	collages(); //Sólo en un malviaje en tabogo
+	collages();
 	jamesusill();
 	lightbox();
 });

@@ -13,9 +13,10 @@ lastY = -1000;
 var titulo;
 
 function getName(){
-	$('.trigger').on('mouseover', function(e) {
-		titulo = $(this).html();
-	}); 
+	$('.trigger')
+		.on('mouseover', function(e) {
+			titulo = $(this).html();
+		}); 
 }
 
 $('.trigger')

@@ -1,5 +1,9 @@
+//Borrar scan
+function borrar_scan(){
+	$("#scan").remove();
+}
+
 //Fancybox
-lightbox();
 function lightbox(){
 	$('[data-fancybox="gallery"]').fancybox({
 		protect: true,
@@ -12,10 +16,12 @@ function lightbox(){
 	$.fancybox.defaults.hash = false;
 }
 
-//Borrar scan
-function borrar_scan(){
-	$("#scan").remove();
-}
+lightbox();
+
+const options = {
+	linkSelector:
+	'a[href^="../"], a[href^="/"]'
+};
 
 //Swup
 const swup = new Swup({
@@ -31,11 +37,6 @@ const swup = new Swup({
 	]
 });
 
-const options = {
-	linkSelector:
-	'a[href^="../"], a[href^="/"]'
-};
-
 swup.on('willReplaceContent', function(){
 	borrar_scan();
 });
@@ -45,60 +46,36 @@ swup.on('transitionEnd', function(){
 });
 
 swup.on('contentReplaced', function(){
-	collages();
-	jamesusill();
+	insertar_contenido('divCollages', 88, "malviaje", '100%', "cuarto");
+	insertar_contenido("divObras", 16, "jamesusill", '98%', "cuarto");
 	lightbox();
 });
 
-//Agregar collages
-function collages(){
-	var selection = document.querySelector('#divCollages') !== null;
+function insertar_contenido(div, cant, proyecto, w, clase) {
+	var selection = document.querySelector('#' + div) !== null;
+	
 	if (selection) {
-		agregarCollages();
-		function agregarCollages () { 
-			for (var i = 1; i <= 88; i++) {  
-				var currentDiv = document.getElementById("divCollages");
-				var newDiv = document.createElement('a');
-				var img = document.createElement("img");
-
-				img.src = "projects/malviaje/" + i + ".png";
-				img.setAttribute('width', '100%');
-
-				newDiv.href = "projects/malviaje/" + i + ".png";
-				newDiv.id = i;
-				newDiv.className = "cuarto";
-				newDiv.setAttribute('data-fancybox', 'gallery'); 
-				newDiv.appendChild(img); 
-
-				currentDiv.appendChild(newDiv);
-			}
-		}
+		agregarContenido(cant, div, proyecto, w, clase);
 	}
-}
+	
+	function agregarContenido(cantidad, seleccion, proyecto, width_imagen, tamaño_div) {
+		for (var i = 1; i <= cantidad; i++) {
+			var currentDiv = document.getElementById(seleccion);
 
-//Agregar obras JU
-function jamesusill(){
-	var selection = document.querySelector('#divObras') !== null;
-	if (selection) {
-		agregarObras();
-		function agregarObras() {
-    		for (var i = 1; i <= 16; i++) {
-        		var currentDiv = document.getElementById("divObras");
-        		var newDiv = document.createElement('a');
-        		var img = document.createElement("img");
+			var newDiv = document.createElement('a');
+			var img = document.createElement("img");
 
-        		img.src = "projects/jamesusill/" + i + ".png";
-        		img.setAttribute('width', '98%');
+			img.src = "projects/" + proyecto + "/" + i + ".png";
+			img.setAttribute('width', width_imagen);
 
-        		newDiv.href = "projects/jamesusill/" + i + ".png";
-        		newDiv.id = i;
-        		newDiv.className = "cuarto";
-        		newDiv.setAttribute("data-fancybox", "gallery");
-        		newDiv.appendChild(img);
+			newDiv.href = "projects/" + proyecto + "/" + i + ".png";
+			newDiv.id = i;
+			newDiv.className = tamaño_div;
+			newDiv.setAttribute("data-fancybox", "gallery");
+			newDiv.appendChild(img);
 
-        		currentDiv.appendChild(newDiv);
-    		}
-    		currentDiv.id = "divObras_Creado";
+			currentDiv.appendChild(newDiv);
 		}
+		currentDiv.id = seleccion + "_Creado";
 	}
 }

@@ -7,6 +7,8 @@ function myFunction(x) {
 	'<p style="font-size: 9pt">'+
 		'<a class="link_normal" href="/about.html">PIERRE PUENTES </a>'+
 		'AKA '+
+		'<a class="link_normal" href="/bejuco.html"> BEJUCO</a>' +
+		' &' +
 		'<a class="link_normal" href="/derealization.html"> DRLZTN</a>'+
 	'</p>'+
 	'<p style="font-size: 9pt">'+
@@ -24,6 +26,8 @@ function myFunction(x) {
 	'<p style="font-size: 9pt">'+
 		'<a class="link_normal" href="/about.html">PIERRE PUENTES</a>'+
 		'<br>AKA'+
+		'<a class="link_normal" href="/bejuco.html"> BEJUCO</a>' +
+		'<br>&' +
 		'<a class="link_normal" href="/derealization.html"> DRLZTN</a>'+
 	'</p>'+
 	'<p style="font-size: 9pt">'+

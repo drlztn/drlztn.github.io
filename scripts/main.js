@@ -1,13 +1,13 @@
-//Borrar scan
+// BORRAR SCAN //
 function borrar_scan(){
 	$("#scan").remove();
 }
 
-//Fancybox
+// FANCYBOX //
 function lightbox(){
 	$('[data-fancybox="gallery"]').fancybox({
 		protect: true,
-		buttons : [ 
+		buttons : [
 			'share',
 			'close',
 		],
@@ -18,22 +18,19 @@ function lightbox(){
 
 lightbox();
 
+// SWUP //
 const options = {
 	linkSelector:
 	'a[href^="../"], a[href^="/"]'
 };
 
-//Swup
 const swup = new Swup({
 	plugins: [
 		new SwupSlideTheme({
 			reversed: true
-		}), 
+		}),
 		new SwupScrollPlugin(),
-		new SwupScriptsPlugin({
-			head: false,
-			body: true
-		})
+		new SwupScriptsPlugin()
 	]
 });
 
@@ -51,13 +48,14 @@ swup.on('contentReplaced', function(){
 	lightbox();
 });
 
+// INSERTAR CONTENIDO //
 function insertar_contenido(div, cant, proyecto, w, clase) {
 	var selection = document.querySelector('#' + div) !== null;
-	
+
 	if (selection) {
 		agregarContenido(cant, div, proyecto, w, clase);
 	}
-	
+
 	function agregarContenido(cantidad, seleccion, proyecto, width_imagen, tamaño_div) {
 		for (var i = 1; i <= cantidad; i++) {
 			var currentDiv = document.getElementById(seleccion);

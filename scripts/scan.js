@@ -1,28 +1,26 @@
 getName();
 
-images = [];
+var titulo;
+var images = [];
 
 mousePos = {
 	x:-1000,
 	y:-1000
 };
 
-lastX = -1000;
-lastY = -1000;
-
-var titulo;
+var lastX = -1000, lastY = -1000;
 
 function getName(){
 	$('.trigger')
-		.on('mouseover', function(e) {
-			titulo = $(this).html();
-		}); 
+	.on('mouseover', function(e) {
+		titulo = $(this).html();
+	});
 }
 
 $('.trigger')
 	.on('mouseover', function(e) {
 		titulo = $(this).html();
-	}); 
+	});
 
 function spawnImage(x, y) {
 	if (lastX === x && lastY === y) {
@@ -53,11 +51,11 @@ function repeater() {
 }
 
 $('.trigger')
-	.on('mousemove', function(e) {
-		mousePos.x = e.pageX;
-		mousePos.y = e.pageY;
-	});
-  
+.on('mousemove', function(e) {
+	mousePos.x = e.pageX;
+	mousePos.y = e.pageY;
+});
+
 function removeImage() {
 	setTimeout(function() {
 		if (images.length > 1) {
@@ -70,9 +68,13 @@ function removeImage() {
 	});
 }
 
-document.addEventListener('DOMContentLoaded', function(event) {
-	getName(); 
+function insertar_scan(){
+	getName();
 	spawnImage(mousePos.x, mousePos.y);
 	repeater();
 	removeImage();
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+	insertar_scan();
 });

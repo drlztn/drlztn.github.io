@@ -63,10 +63,10 @@ function insertar_contenido(div, cant, proyecto, w, clase) {
 			var newDiv = document.createElement('a');
 			var img = document.createElement("img");
 
-			img.src = "projects/" + proyecto + "/" + i + ".png";
+			img.src = proyecto + "/" + i + ".png";
 			img.setAttribute('width', width_imagen);
 
-			newDiv.href = "projects/" + proyecto + "/" + i + ".png";
+			newDiv.href = proyecto + "/" + i + ".png";
 			newDiv.id = i;
 			newDiv.className = tamaño_div;
 			newDiv.setAttribute("data-fancybox", "gallery");

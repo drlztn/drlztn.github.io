@@ -2,7 +2,7 @@ function myFunction(x) {
 	if (menu_celu.matches) {
 		document.getElementById("menu").innerHTML =
 		'<a href="/index.html">'+
-		'<img src="/resources/logo_200.png" style="height: 120px; ">'+
+		'<img src="/resources/logo.png" style="height: 120px; ">'+
 		'</a>'+
 		'<p style="font-size: 9pt">'+
 		'<a class="link_normal" href="/about.html">PIERRE PUENTES </a>'+
@@ -21,7 +21,7 @@ function myFunction(x) {
 	}	else {
 		document.getElementById("menu").innerHTML =
 		'<a href="/index.html">'+
-		'<img src="/resources/logo_200.png" style="height: 120px; ">'+
+		'<img src="/resources/logo.png" style="height: 120px; ">'+
 		'</a>'+
 		'<p style="font-size: 9pt">'+
 		'<a class="link_normal" href="/about.html">PIERRE PUENTES</a>'+

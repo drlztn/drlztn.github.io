@@ -36,7 +36,7 @@ var blocks = [];
 // Load BMP Unicode blocks ranges from JSON file to the blocks array.
 $.ajax({
   async: false,
-  url: '/data/bmp_blocks.json',
+  url: '/projects/jngl/glyphz/data/bmp_blocks.json',
   data: "",
   accepts:'application/json',
   dataType: 'json',

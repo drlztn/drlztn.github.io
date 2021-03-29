@@ -1,4 +1,4 @@
-[GLYPHZ] Copyright (2020) (Pierre Puentes Gómez aka DRLZTN
+[GLYPHZ] Copyright (2021) (Pierre Puentes Gómez aka Bejuco
 )(“Licensor”)
 
 Hippocratic License Version Number: 2.1.

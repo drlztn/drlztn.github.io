@@ -1,4 +1,4 @@
-/* // Principal // */
+/* Main */
 html, body {
 	width: 100%;
 	height: 100%;
@@ -12,7 +12,7 @@ html, body {
 	margin: 0 auto;
 }
 
-/* // Info y logo // */
+/* Info & logo */
 #info {
 	display: flex;
 	flex-direction: column;
@@ -21,8 +21,8 @@ html, body {
 	margin: 20vh 0 0 calc(50% - 430px);
 }
 
-/* // Canvas, crear y descargar // */
-#menu_canvas {
+/* Canvas, create & download */
+#canvas_create_download {
 	display: flex;
 	flex-direction: column;
 	height: 550px;
@@ -73,12 +73,12 @@ html, body {
 	border: 0;
 }
 
-.icono_boton {
+.button_icon {
 	height: 150%;
 	margin: -4px;
 }
 
-#crear_descargar {
+#create_download {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -86,20 +86,16 @@ html, body {
 	margin: 15px 0 0 0;
 }
 
-#crear {
+#create {
 	margin: 0 10px 0 0;
 }
 
-#menu_descarga {
+#download {
 	display: flex;
 	flex-direction: row;
 	margin: 0 0 0 0;
 	height: 100%;
 	background-color: #303030;
-}
-
-#descargar {
-	margin-left: 50px;
 }
 
 .number_form {
@@ -111,10 +107,10 @@ html, body {
 }
 
 input[type="number"], textarea {
-  background-color : #303030;
+	background-color : #303030;
 }
 
-#cantidad_numero {
+#amount_number {
 	width: 55px;
 	border-style: none;
 	color: #ffffff;
@@ -122,21 +118,18 @@ input[type="number"], textarea {
 	font-size: 13px;
 }
 
-.tippy-box {
-  background-color: #181818;
-  font-size:11px;
-}
-
-.tippy-content {
-  font-family: 'fivo_sans_modernregular';
-}
-
-/* // Checks y sliders // */
-#menu_opciones {
+/* Checks, fonts & sliders */
+#options {
 	display: flex;
 	flex-direction: column;
 	height: 500px;
 	margin: 20vh 0 0 20px;
+}
+
+#blocks{
+	height: 400px;
+	overflow-y: scroll;
+	margin-bottom: 10px;
 }
 
 .check_form {
@@ -144,7 +137,8 @@ input[type="number"], textarea {
 	color: #666666;
 	font-family: Arial;
 	font-size: 12px;
-	vertical-align: center;
+	display: flex;
+  align-items: center;
 }
 
 input[type="checkbox"] {
@@ -157,7 +151,16 @@ input[type="checkbox"] + label {
 	font-family: 'fivo_sans_modernregular';
 }
 
-#opciones {
+#fonts{
+	margin-top: 20px;
+}
+
+.select {
+	color: #000000;
+	font-family: 'fivo_sans_modernregular';
+}
+
+#transformations {
 	margin: 30px 0 0 0;
 }
 
@@ -168,7 +171,7 @@ input[type="checkbox"] + label {
 	margin: 10px 0 0 0;
 }
 
-/* // Fuentes y estilos de texto // */
+/* Fonts */
 @font-face {
 	font-family: 'fivo_sans_modernbold';
 	src: url('fonts/fivosansmodern-bold-webfont.woff2') format('woff2'), url('fonts/fivosansmodern-bold-webfont.woff') format('woff');
@@ -190,9 +193,11 @@ input[type="checkbox"] + label {
 	font-style: normal;
 }
 
-.texto_svg {
-	font-family: 'arial-unicode';
-	src: url('arial-unicode-ms.ttf') format('truetype');
+@font-face {
+	font-family: 'unifont';
+	src: url('fonts/unifont-13.0.06.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 p {
@@ -206,37 +211,36 @@ a {
 }
 
 a.link_normal:link {
-  transition: color .2s linear;
-  color: #555555;
-  text-decoration: none;
+	transition: color .2s linear;
+	color: #555555;
+	text-decoration: none;
 }
 
 a.link_normal:visited {
-  color: #555555;
-  text-decoration: none;
+	color: #555555;
+	text-decoration: none;
 }
 
 a.link_normal:hover {
-  color: black;
-  text-decoration: underline;
+	color: black;
+	text-decoration: underline;
 }
 
 a.link_info:link {
-  transition: color .2s linear;
-  color: #555555;
-  text-decoration: none;
+	transition: color .2s linear;
+	color: #555555;
+	text-decoration: none;
 }
 
 a.link_info:visited {
-  color: #555555;
-  text-decoration: none;
+	color: #555555;
+	text-decoration: none;
 }
 
 a.link_normal:hover {
-  color: black;
-  text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
-
 
 h5 {
 	font-family: 'fivo_sans_modernbold';

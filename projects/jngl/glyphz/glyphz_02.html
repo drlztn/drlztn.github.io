@@ -1,0 +1,71 @@
+<!-- GLYPHZ v0.2 BY BEJUCO @ 2021 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GLYPHZ</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="scripts/node_modules/jquery/dist/jquery.js"></script>
+	<script src="scripts/node_modules/@svgdotjs/svg.js/dist/svg.min.js"></script>
+	<script src="scripts/node_modules/jszip/dist/jszip.min.js"></script>
+	<script src="scripts/node_modules/file-saver/dist/FileSaver.min.js"></script>
+</head>
+<body id="body">
+	<article class="container">
+		<div id="info">
+			<a href="https://bejuco.co">
+				<img src="resources/images/logo.png" style="height: 120px">
+			</a>
+			<p>GLYPHZ v0.2</p>
+			<a class="link_normal" href="https://bejuco.co/projects/jngl.html">INFO</a>
+			<a class="link_normal" href="LICENSE.md">LICENCE </a>
+			<a class="link_normal" href="https://github.com/bejucoo/JNGL">GITHUB</a>
+		</div>
+
+		<div id="canvas_create_download">
+			<div id="canvas"></div>
+			<div id="create_download">
+				<div id=create>
+					<button class="boton" id="create_button" type="button">
+						<img class="button_icon" src="resources/images/cached-white-48dp.svg">
+					</button>
+				</div>
+				<div id="download">
+					<button class="boton" id="download_button" type="button">
+						<img class="button_icon" src="resources/images/save_alt-white-48dp.svg">
+					</button>
+					<form class="number_form" id="download_amount">
+						<input type="number" min="1" max="1000" name="Amount" value="1" id="amount_number">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="options">
+			<div id="blocks"></div>
+
+			<div id="fonts">
+				<form class="select">
+					<label for="font_selection">FONT: </label>
+					<select id="font_selection" name="Font">
+						<option value="unifont">GNU Unifont</option>
+						<option value="arial-unicode">Arial Unicode MS</option>
+					</select>
+				</form>
+			</div>
+
+			<div id="transformations">
+				<form class="slider">
+					<label for="Rotation">ROTATION</label><br>
+					<input type="range" id="rotation_graf" name="Rotation" min="0" max="360" value="0">
+				</form>
+				<form class="slider">
+					<label for="Scale">SCALE</label><br>
+					<input type="range" id="scale_graf" name="Scale" min="0.4" max="1" step="0.01" value="0.8">
+				</form>
+			</div>
+		</div>
+	</article>
+	<script src="glyphz_02.js"></script>
+</body>
+</html>

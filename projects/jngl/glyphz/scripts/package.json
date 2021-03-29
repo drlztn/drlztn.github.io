@@ -1,0 +1,17 @@
+{
+  "name": "glyphz_scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bejuco",
+  "license": "ISC",
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.0.16",
+    "file-saver": "^2.0.5",
+    "jquery": "^3.6.0",
+    "jszip": "^3.6.0"
+  }
+}

@@ -14,7 +14,7 @@ function myFunction(x) {
 		'<p style="font-size: 9pt">'+
 		'<a class="link_normal" href="/works.html">OTROS PROYECTOS</a>'+
 		'					   '+
-		'<a class="link_normal" href="https://derealizationnn.tumblr.com/">BLOG</a>'+
+		'<a class="link_normal" href="https://bejucoo.tumblr.com/">BLOG</a>'+
 		'					   '+
 		'<a class="link_normal" href="/contact.html">CONTACTO</a>'+
 		'</p>';
@@ -33,7 +33,7 @@ function myFunction(x) {
 		'<p style="font-size: 9pt">'+
 		'<a class="link_normal" href="/works.html">OTROS PROYECTOS</a>'+
 		'<br>'+
-		'<a class="link_normal" href="https://derealizationnn.tumblr.com/">BLOG</a>'+
+		'<a class="link_normal" href="https://bejucoo.tumblr.com/">BLOG</a>'+
 		'<br>'+
 		'<a class="link_normal" href="/contact.html">CONTACTO</a>'+
 		'</p>';
